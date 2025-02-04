@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Navbar from "@/components/main/Navbar";
 import "./globals.css";
-// import StarCanvas from "@/components/main/StarBackground";
+import StarCanvas from "@/components/main/StarBackground";
 
 const inter = Inter({subsets: ["latin"] });
 
@@ -21,7 +21,7 @@ export default function RootLayout({
       <body
         className={`${inter.className} bg-black overflow-x-hidden overflow-y-scroll`}>
         {children}
-        {/* <StarCanvas/> */}
+        <StarCanvas/>
         <Navbar/>
       </body>
     </html>
